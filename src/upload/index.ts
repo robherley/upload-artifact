@@ -5,7 +5,7 @@ import {run} from './upload-artifact'
 const main = async () => {
   const interval = setInterval(() => {
     log()
-  }, 5000)
+  }, 30000)
 
   try {
     await run()
