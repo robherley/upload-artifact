@@ -9,6 +9,10 @@ const main = async () => {
 
   try {
     await run()
+    core.info('Artifact uploaded successfully')
+    core.startGroup('Open Handlers')
+    log()
+    core.endGroup()
   } catch (error) {
     core.setFailed((error as Error).message)
   } finally {
